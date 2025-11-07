@@ -1,0 +1,15 @@
+{
+  "domain": "moes_mini_module",
+  "name": "MOES Mini Module Intelligent (local)",
+  "version": "1.0.0",
+  "documentation": "https://github.com/SoFarSoGood86/moes_mini_module",
+  "issue_tracker": "https://github.com/SoFarSoGood86/moes_mini_module/issues",
+  "requirements": [
+    "tinytuya==1.17.4"
+  ],
+  "codeowners": [
+    "@SoFarSoGood86"
+  ],
+  "iot_class": "local_polling",
+  "homeassistant": "2021.12.0"
+}
