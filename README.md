@@ -9,18 +9,18 @@
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-41BDF5)](https://www.home-assistant.io/)
 
 ## Description
-Cette intégration Home Assistant permet le contrôle en local (TuyaLan Protocol) sans passer par le cloud, des modules MOES Mini Intelligent (dimmer, switch, curtain, garage) via la bibliothèque [`tinytuya`](https://github.com/jasonacox/tinytuya).
-Elle regroupe plusieurs types d'appareils dans une intégration unique pour une maintenance simplifiée.
+Cette intégration Home Assistant permet le contrôle en local (TuyaLan Protocol) sans passer par le cloud.
+Elle regroupe les modules MOES Mini Intelligent (dimmer, switch, curtain, garage) via la bibliothèque [`tinytuya`](https://github.com/jasonacox/tinytuya) dans une intégration unique pour une installation domotique simplifiée.
 
 ## Modules supportés
-- MOES Mini Dimmer module 1 gang (dimmer_1)
-- MOES Mini Dimmer module 2 gang (dimmer_2)
-- MOES Mini Switch module 1 gang (switch_1)
-- MOES Mini Switch module 2 gang (switch_2)
-- MOES Mini Switch module 3 gang (switch_3)
-- MOES Mini Switch module 4 gang (switch_4)
-- MOES Mini Smart Curtain Switch module (curtain)
-- MOES Mini Smart Garage Door module (garage)
+- MOES - Mini Dimmer module 1 gang (dimmer_1)
+- MOES - Mini Dimmer module 2 gang (dimmer_2)
+- MOES - Mini Switch module 1 gang (switch_1)
+- MOES - Mini Switch module 2 gang (switch_2)
+- MOES - Mini Switch module 3 gang (switch_3)
+- MOES - Mini Switch module 4 gang (switch_4)
+- MOES - Mini Smart Curtain Switch module (curtain)
+- MOES - Mini Smart Garage Door module (garage)
 
 ## Fonctionnalités
 - Contrôle local LAN (pas de cloud nécessaire)
