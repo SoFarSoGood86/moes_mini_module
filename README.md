@@ -10,7 +10,7 @@
 
 ## Description
 Cette intégration Home Assistant permet le contrôle en local (TuyaLan Protocol) sans passer par le cloud.
-Elle regroupe les modules MOES Mini Intelligent (dimmer, switch, curtain, garage) via la bibliothèque [`tinytuya`](https://github.com/jasonacox/tinytuya) dans une intégration unique pour une installation domotique simplifiée.
+Elle regroupe les modules connectés "MOES Mini" (dimmer, switch, curtain, garage) via la bibliothèque [`tinytuya`](https://github.com/jasonacox/tinytuya) dans une intégration unique pour une installation domotique simplifiée.
 
 ## Modules supportés
 - MOES - Mini Dimmer module 1 gang (dimmer_1)
