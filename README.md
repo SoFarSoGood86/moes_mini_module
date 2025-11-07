@@ -52,7 +52,12 @@ Elle regroupe les modules connectés "MOES Mini" (dimmer, switch, curtain, garag
 - L'intégration nécessite la `local_key` pour le contrôle local.
 
 ## Licence
-MIT — voir fichier LICENSE.
+## Support
+
+Si vous aimez cette intégration, vous pouvez m’offrir un café ☕️ :
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/SoFarSoGood86)
+
 
 ## Aide / Issues
 Ouvrez une issue sur le dépôt GitHub : `https://github.com/SoFarSoGood86/moes_mini_module/issues`
