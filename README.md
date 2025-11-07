@@ -9,7 +9,7 @@
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-41BDF5)](https://www.home-assistant.io/)
 
 ## Description
-Cette intégration Home Assistant permet le contrôle local (LAN) des modules MOES Mini Joli Intelligent (dimmer, switch, curtain, garage) via la bibliothèque `tinytuya`.[`tinytuya`](https://github.com/jasonacox/tinytuya)
+Cette intégration Home Assistant permet le contrôle local (TuyaLan Protocol) des modules MOES Mini Joli Intelligent (dimmer, switch, curtain, garage) via la bibliothèque [`tinytuya`](https://github.com/jasonacox/tinytuya).
 Elle regroupe plusieurs types d'appareils dans une intégration unique pour une maintenance simplifiée.
 
 ## Modules supportés
