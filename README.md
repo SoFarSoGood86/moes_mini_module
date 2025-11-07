@@ -30,12 +30,8 @@ Elle regroupe plusieurs types d'appareils dans une intégration unique pour une 
 - Adresse IP, device_id et local_key pour chaque module
 
 ## Installation via HACS
-
- 
-
+1. Ajouter le dépôt comme dépôt personnalisé dans HACS (type: Intégration).
    [![Set up a new integration in Home Assistant](https://my.home-assistant.io/badges/config_flow_start.svg)](https://github.com/SoFarSoGood86/moes_mini_module)
-   
-1. Ajouter le dépôt `https://github.com/SoFarSoGood86/moes_mini_module` comme dépôt personnalisé dans HACS (type: Intégration).
 2. Installer l'intégration depuis HACS et redémarrer Home Assistant.
 3. Ajouter l'intégration via **Paramètres → Appareils et Services → Ajouter une intégration → MOES Mini Module Intelligent (local)**.
 4. Saisir l'IP, le `device_id`, le `local_key` et sélectionner le `device_type`.
