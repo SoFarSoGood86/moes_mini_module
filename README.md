@@ -3,6 +3,11 @@
 
 # MOES Mini Module Intelligent (local)
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz)
+[![License](https://img.shields.io/github/license/SoFarSoGood86/costway_climate)](LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/SoFarSoGood86/costway_climate)](https://github.com/SoFarSoGood86/costway_climate/releases)
+[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-41BDF5)](https://www.home-assistant.io/)
+
 ## Description
 Cette intégration Home Assistant permet le contrôle local (LAN) des modules MOES Mini Joli Intelligent (dimmer, switch, curtain, garage) via la bibliothèque `tinytuya`.
 Elle regroupe plusieurs types d'appareils dans une intégration unique pour une maintenance simplifiée.
