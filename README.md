@@ -57,5 +57,6 @@ Ouvrez une issue sur le dépôt GitHub : `https://github.com/SoFarSoGood86/moes_
 ## Support
 
 Si vous aimez cette intégration, vous pouvez m’offrir un café ☕️ :
+
 [![Buy Me A Coffee](https://github.com/user-attachments/assets/5b064037-c6d4-4d66-b53a-21e340178782 )](https://www.buymeacoffee.com/SoFarSoGood86)
 
