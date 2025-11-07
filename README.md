@@ -1,3 +1,6 @@
+<img width="1463" height="366" alt="MOES_HA_HACS" src="https://github.com/user-attachments/assets/d049a712-5e15-422d-8f18-a6926ce2339f" />
+
+
 # MOES Mini Module Intelligent (local)
 
 ## Description
