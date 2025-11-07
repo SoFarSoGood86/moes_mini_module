@@ -4,8 +4,8 @@
 # MOES Mini Module Intelligent (local)
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz)
-[![License](https://img.shields.io/github/license/SoFarSoGood86/costway_climate)](LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/SoFarSoGood86/costway_climate)](https://github.com/SoFarSoGood86/costway_climate/releases)
+[![License](https://img.shields.io/github/license/SoFarSoGood86/moes_mini_module)](LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/SoFarSoGood86/costway_climate)](https://github.com/SoFarSoGood86/moes_mini_module/releases)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-41BDF5)](https://www.home-assistant.io/)
 
 ## Description
