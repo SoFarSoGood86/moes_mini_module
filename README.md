@@ -51,12 +51,15 @@ Elle regroupe les modules connectés "MOES Mini" (dimmer, switch, curtain, garag
 - Les `dps` peuvent varier selon firmware. Si un appareil ne répond pas comme prévu, récupérez le `status()` via tinytuya et ouvrez une issue.
 - L'intégration nécessite la `local_key` pour le contrôle local.
 
-## Licence
 ## Support
 
 Si vous aimez cette intégration, vous pouvez m’offrir un café ☕️ :
 
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/SoFarSoGood86)
+[![Buy Me A Coffee](<img width="200" height="56" alt="default-yellow" src="https://github.com/user-attachments/assets/5b064037-c6d4-4d66-b53a-21e340178782" />
+)](https://www.buymeacoffee.com/SoFarSoGood86)
+
+
+<img width="200" height="56" alt="default-yellow" src="https://github.com/user-attachments/assets/5b064037-c6d4-4d66-b53a-21e340178782" />
 
 
 ## Aide / Issues
