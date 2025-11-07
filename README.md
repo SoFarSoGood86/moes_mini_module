@@ -31,10 +31,11 @@ Elle regroupe plusieurs types d'appareils dans une intégration unique pour une 
 
 ## Installation via HACS
 1. Ajouter le dépôt comme dépôt personnalisé dans HACS (type: Intégration).
+
    [![Set up a new integration in Home Assistant](https://my.home-assistant.io/badges/config_flow_start.svg)](https://github.com/SoFarSoGood86/moes_mini_module)
-2. Installer l'intégration depuis HACS et redémarrer Home Assistant.
-3. Ajouter l'intégration via **Paramètres → Appareils et Services → Ajouter une intégration → MOES Mini Module Intelligent (local)**.
-4. Saisir l'IP, le `device_id`, le `local_key` et sélectionner le `device_type`.
+3. Installer l'intégration depuis HACS et redémarrer Home Assistant.
+4. Ajouter l'intégration via **Paramètres → Appareils et Services → Ajouter une intégration → MOES Mini Module Intelligent (local)**.
+5. Saisir l'IP, le `device_id`, le `local_key` et sélectionner le `device_type`.
 
 ## Mappings DP courants (à vérifier selon firmware)
 - Dimmer: `DP 1` = ON/OFF, `DP 2` = Brightness (0–100)
