@@ -31,7 +31,7 @@ Elle regroupe plusieurs types d'appareils dans une intégration unique pour une 
 ## Prérequis
 - Home Assistant 2021.12 ou supérieur
 - Python 3.11+
-- `tinytuya==1.17.4`
+- [`tinytuya==1.17.4`](https://github.com/jasonacox/tinytuya).
 - Adresse IP, device_id et local_key pour chaque module
 
 ## Installation via HACS
