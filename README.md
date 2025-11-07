@@ -5,14 +5,14 @@ Cette intégration Home Assistant permet le contrôle local (LAN) des modules MO
 Elle regroupe plusieurs types d'appareils dans une intégration unique pour une maintenance simplifiée.
 
 ## Modules supportés
-- MOES Mini Joli Intelligent 1 gang Dimmer (dimmer_1)
-- MOES Mini Joli Intelligent 2 gang Dimmer (dimmer_2)
-- MOES Mini Joli Intelligent 1 gang Switch (switch_1)
-- MOES Mini Joli Intelligent 2 gang Switch (switch_2)
-- MOES Mini Joli Intelligent 3 gang Switch (switch_3)
-- MOES Mini Joli Intelligent 4 gang Switch (switch_4)
-- MOES Mini smart curtain switch module (curtain)
-- MOES Mini smart garage door module (garage)
+- MOES Mini Dimmer module 1 gang (dimmer_1)
+- MOES Mini Dimmer module 2 gang (dimmer_2)
+- MOES Mini Switch module 1 gang (switch_1)
+- MOES Mini Switch module 2 gang (switch_2)
+- MOES Mini Switch module 3 gang (switch_3)
+- MOES Mini Switch module 4 gang (switch_4)
+- MOES Mini Smart Curtain Switch module (curtain)
+- MOES Mini Smart Garage Door module (garage)
 
 ## Fonctionnalités
 - Contrôle local LAN (pas de cloud nécessaire)
