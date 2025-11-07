@@ -49,7 +49,7 @@ Elle regroupe les modules connectés "MOES Mini" (dimmer, switch, curtain, garag
 
 ## Limitations
 - Les `dps` peuvent varier selon firmware. Si un appareil ne répond pas comme prévu, récupérez le `status()` via tinytuya et ouvrez une issue.
-- L'intégration nécessite le `local_key` pour le contrôle local.
+- L'intégration nécessite la `local_key` pour le contrôle local.
 
 ## Licence
 MIT — voir fichier LICENSE.
