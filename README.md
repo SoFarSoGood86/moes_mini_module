@@ -44,6 +44,9 @@ Elle regroupe les modules connectés "MOES Mini" (dimmer, switch, curtain, garag
 
 6. Manuel : copier `custom_components/moes_mini_module` dans `config/custom_components/` et redémarrer HA.
 
+## Exemple YAML
+Voir `example_config.yaml` fourni.
+
 ## Mappings DP courants (à vérifier selon firmware)
 - Dimmer: `DP 1` = ON/OFF, `DP 2` = Brightness (0–100)
 - Switch multi-gang: `DP 1..4` = on/off pour chaque canal
@@ -53,14 +56,11 @@ Elle regroupe les modules connectés "MOES Mini" (dimmer, switch, curtain, garag
 - Les `dps` peuvent varier selon firmware. Si un appareil ne répond pas comme prévu, récupérez le `status()` via tinytuya et ouvrez une issue.
 - L'intégration nécessite la `local_key` pour le contrôle local.
 
-## Changelog (extrait)
-- v1.1.0 : Ajout détection DPS, options DP, tests, CI, icon, example_config.yaml
-
-## Exemple YAML
-Voir `example_config.yaml` fourni.
-
 ## Aide / Issues
 Ouvrez une issue sur le dépôt GitHub : `https://github.com/SoFarSoGood86/moes_mini_module/issues`
+
+## Changelog (extrait)
+- v1.1.0 : Ajout détection DPS, options DP, tests, CI, icon, example_config.yaml
 
 ## Support
 
