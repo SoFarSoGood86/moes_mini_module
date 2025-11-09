@@ -6,7 +6,6 @@ async def async_setup(hass: HomeAssistant, config: dict):
     return True
 
 async def async_setup_entry(hass, entry):
-    # Forward to platforms based on supported platforms
     await hass.config_entries.async_forward_entry_setups(entry, ["light", "switch", "cover"])
     hass.data[DOMAIN][entry.entry_id] = entry
     return True

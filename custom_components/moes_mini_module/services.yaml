@@ -1,0 +1,6 @@
+refresh_status:
+  description: 'Force un rafraîchissement des états depuis le périphérique via tinytuya.status()'
+  fields:
+    device_id:
+      description: 'Identifiant du périphérique (device_id)'
+      example: '0123456789abcdef'

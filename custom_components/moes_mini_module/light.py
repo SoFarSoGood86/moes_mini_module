@@ -1,8 +1,5 @@
 import logging
-from homeassistant.components.light import (
-    LightEntity,
-    SUPPORT_BRIGHTNESS,
-)
+from homeassistant.components.light import LightEntity, SUPPORT_BRIGHTNESS
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
@@ -20,7 +17,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     device_type = data.get("device_type", "dimmer_1")
 
     device = MoesDevice(device_id, ip, local_key)
-
     entities = []
     if device_type == "dimmer_1":
         entities.append(MoesDimmerLight(device, name + " (Dimmer 1)"))
@@ -57,7 +53,6 @@ class MoesDimmerLight(LightEntity):
         try:
             if brightness is not None:
                 b = int(brightness * 100 / 255)
-                # DP 2 common for brightness
                 self._device.set_dps(2, b)
                 self._brightness = b
                 self._is_on = b > 0

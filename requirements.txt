@@ -1,0 +1,5 @@
+pytest
+pytest-homeassistant-custom-component
+flake8
+homeassistant
+tinytuya==1.12.0

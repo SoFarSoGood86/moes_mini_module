@@ -7,7 +7,6 @@ CONF_DEVICE_TYPE = "device_type"
 
 DEFAULT_NAME = "MOES Mini Module Intelligent (local)"
 
-# Supported device types
 DEVICE_TYPES = [
     "dimmer_1",
     "dimmer_2",

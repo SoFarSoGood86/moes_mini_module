@@ -4,13 +4,10 @@ import tinytuya
 _LOGGER = logging.getLogger(__name__)
 
 class MoesDevice:
-    """Wrapper around tinytuya for MOES Mini devices."""
-
     def __init__(self, device_id: str, ip: str, local_key: str, version: float = 3.3):
         self.device_id = device_id
         self.ip = ip
         self.local_key = local_key
-        # Choose device class dynamically if needed (OutletDevice/BulbDevice)
         self._device = tinytuya.OutletDevice(device_id, ip, local_key)
         try:
             self._device.set_version(version)

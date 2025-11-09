@@ -1,15 +1,43 @@
 {
   "domain": "moes_mini_module",
-  "name": "MOES Mini Module Intelligent (local)",
-  "version": "1.0.0",
+  "name": "MOES Mini Module (local)",
+  "version": "1.1.0",
   "documentation": "https://github.com/SoFarSoGood86/moes_mini_module",
   "issue_tracker": "https://github.com/SoFarSoGood86/moes_mini_module/issues",
   "requirements": [
-    "tinytuya==1.17.4"
+    "tinytuya==1.12.0"
   ],
   "codeowners": [
     "@SoFarSoGood86"
   ],
   "iot_class": "local_polling",
-  "homeassistant": "2021.12.0"
+  "integration_type": "hub",
+  "loggers": [
+    "custom_components.moes_mini_module"
+  ],
+  "config_flow": true,
+  "supported_devices": [
+    "MOES Mini 1 gang Dimmer",
+    "MOES Mini 2 gang Dimmer",
+    "MOES Mini 1 gang Switch",
+    "MOES Mini 2 gang Switch",
+    "MOES Mini 3 gang Switch",
+    "MOES Mini 4 gang Switch",
+    "MOES Mini smart curtain switch module",
+    "MOES Mini smart garage door module"
+  ],
+  "changelog": {
+    "1.1.0": [
+      "Ajout de la détection automatique DPS (tinytuya)",
+      "Ajout de la configuration alternative YAML",
+      "Ajout du service refresh_status",
+      "Ajout des tests unitaires et CI GitHub",
+      "Ajout du logo MOES pour HACS",
+      "Ajout du fichier example_config.yaml",
+      "Amélioration du README et des logs"
+    ],
+    "1.0.0": [
+      "Support initial du module MOES Mini Dimmer 1 gang (contrôle local)"
+    ]
+  }
 }

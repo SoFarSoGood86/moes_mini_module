@@ -39,7 +39,6 @@ class MoesCover(CoverEntity):
 
     def open_cover(self, **kwargs):
         try:
-            # DP mapping common: 1=open, 2=close, 3=stop, 101=position
             self._device.set_dps(1, True)
         except Exception as e:
             _LOGGER.exception("Failed to open cover: %s", e)
@@ -61,7 +60,6 @@ class MoesCover(CoverEntity):
         if position is None:
             return
         try:
-            # position 0-100 -> DP 101
             self._device.set_dps(101, int(position))
             self._position = int(position)
         except Exception as e:
@@ -75,6 +73,5 @@ class MoesCover(CoverEntity):
                 self._position = int(dps.get('101') or 0)
             except Exception:
                 self._position = None
-        # rough status mapping
         if '1' in dps and '2' in dps:
             self._is_open = bool(dps.get('1')) and not bool(dps.get('2'))

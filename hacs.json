@@ -1,11 +1,14 @@
 {
-  "name": "MOES Mini Module Intelligent (local)",
+  "name": "MOES Mini Module (local)",
   "content_in_root": false,
   "domains": [
     "light",
     "switch",
     "cover"
   ],
-  "homeassistant": "2021.12.0",
+  "country": [
+    "FR"
+  ],
+  "homeassistant": "2024.5.0",
   "render_readme": true
 }

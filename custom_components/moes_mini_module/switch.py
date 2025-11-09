@@ -18,7 +18,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
 
     device = MoesDevice(device_id, ip, local_key)
     entities = []
-    # map number of gangs from device_type
     if device_type.startswith("switch_"):
         try:
             gangs = int(device_type.split("_")[1])
@@ -45,7 +44,6 @@ class MoesSwitch(SwitchEntity):
 
     def turn_on(self, **kwargs):
         try:
-            # DP indexes commonly '1','2','3','4' for multi-switch
             self._device.set_dps(self._index, True)
             self._is_on = True
         except Exception as e:
