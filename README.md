@@ -64,10 +64,8 @@ moes_mini_module:
       device_id: 0987654321abcdefabcd4321
       type: switch_2gang
 ```
-Ou :
-Manuel : copier `custom_components/moes_mini_module` dans `config/custom_components/` et redémarrer HA.
 
-> Chaque module doit avoir une adresse IP fixe et sa propre clé locale.
+Ou, copier `custom_components/moes_mini_module` dans `config/custom_components/` et redémarrer HA.
 
 ## Exemple YAML
 Voir `example_config.yaml` fourni.
