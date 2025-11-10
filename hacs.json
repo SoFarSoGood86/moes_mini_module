@@ -1,14 +1,12 @@
 {
   "name": "MOES Mini Module (local)",
-  "content_in_root": false,
-  "domains": [
-    "light",
-    "switch",
-    "cover"
-  ],
-  "country": [
-    "FR"
-  ],
-  "homeassistant": "2024.5.0",
-  "render_readme": true
+  "render_readme": true,
+  "country": "FR",
+  "domains": ["light", "switch", "cover"],
+  "filename": "custom_components/moes_mini_module",
+  "homeassistant": "2025.1.0",
+  "iot_class": "local_polling",
+  "hide_default_branch": false,
+  "icon": "https://raw.githubusercontent.com/SoFarSoGood86/moes_mini_module/main/icon.png",
+  "content_in_root": false
 }
