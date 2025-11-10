@@ -136,15 +136,15 @@ custom_components/moes_mini_module/
 └── icon.png
 ```
 
+## Changelog (extrait)
+- v1.1.0 : Ajout détection DPS, options DP, tests, CI, icon, example_config.yaml
+
 ## Historique des versions
 
 | Version | Date | Changements |
 |----------|------|--------------|
-| 1.1.0 | 2025-11-10 | Ajout complet des modules Dimmer, Switch, Curtain, Garage + gestion YAML + CI |
-| 1.0.0 | 2025-11-09 | Première version fonctionnelle |
-
-## Changelog (extrait)
-- v1.1.0 : Ajout détection DPS, options DP, tests, CI, icon, example_config.yaml
+- v1.1.0 | 2025-11-10 | Ajout complet des modules Dimmer, Switch, Curtain, Garage + gestion YAML + CI |
+- v1.0.0 | 2025-11-09 | Première version fonctionnelle |
 
 ## Aide / Issues
 Ouvrez une issue sur le dépôt GitHub : `https://github.com/SoFarSoGood86/moes_mini_module/issues`
