@@ -9,7 +9,7 @@
 
 
 
-![HACS Badge](https://img.shields.io/badge/HACS-Custom-orange.svg)
+![HACS Badge](https://img.shields.io/badge/HACS-Custom-blue.svg?logo=homeassistant)](https://hacs.xyz)
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2025.1+-blue.svg)
 ![License](https://img.shields.io/github/license/SoFarSoGood86/moes_mini_module)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/SoFarSoGood86/moes_mini_module)
