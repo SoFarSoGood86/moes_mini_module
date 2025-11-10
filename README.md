@@ -41,75 +41,7 @@ Elle regroupe les modules connectés "MOES Mini" (dimmer, switch, curtain, garag
 4. Ajouter l'intégration via **Paramètres → Appareils et Services → Ajouter une intégration → MOES Mini Module Intelligent (local)**.
 5. Saisir l'IP, le `device_id`, le `local_key` et sélectionner le `device_type`.
 
-6. Manuel : copier `custom_components/moes_mini_module` dans `config/custom_components/` et redémarrer HA.
-
-## Exemple YAML
-Voir `example_config.yaml` fourni.
-
-## Mappings DP courants (à vérifier selon firmware)
-- Dimmer: `DP 1` = ON/OFF, `DP 2` = Brightness (0–100)
-- Switch multi-gang: `DP 1..4` = on/off pour chaque canal
-- Curtain/Garage: `DP 1` = open, `DP 2` = close, `DP 3` = stop, `DP 101` = position (0–100)
-
-## Limitations
-- Les `dps` peuvent varier selon firmware. Si un appareil ne répond pas comme prévu, récupérez le `status()` via tinytuya et ouvrez une issue.
-- L'intégration nécessite la `local_key` pour le contrôle local.
-
-## Aide / Issues
-Ouvrez une issue sur le dépôt GitHub : `https://github.com/SoFarSoGood86/moes_mini_module/issues`
-
-## Changelog (extrait)
-- v1.1.0 : Ajout détection DPS, options DP, tests, CI, icon, example_config.yaml
-
-## Support
-
-Si vous aimez cette intégration, vous pouvez m’offrir un café ☕️ :
-
-[![Buy Me A Coffee](https://github.com/user-attachments/assets/5b064037-c6d4-4d66-b53a-21e340178782 )](https://www.buymeacoffee.com/SoFarSoGood86)
-
-
-
-- - - - - - - - -
-
-
-# 💡 MOES Mini Module (local)
-
-![HACS Badge](https://img.shields.io/badge/HACS-Custom-orange.svg)
-![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2025.1+-blue.svg)
-![License](https://img.shields.io/github/license/SoFarSoGood86/moes_mini_module)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/SoFarSoGood86/moes_mini_module)
-![Build](https://github.com/SoFarSoGood86/moes_mini_module/actions/workflows/ci.yml/badge.svg)
-
----
-
-## 🧩 Présentation
-
-**MOES Mini Module (local)** est une intégration Home Assistant permettant de **contrôler en local** (sans cloud Tuya) plusieurs modèles de modules MOES "Mini Joli Intelligent", via le protocole **TinyTuya**.
-
-### Modules compatibles :
-- MOES Mini Joli Intelligent **1 gang Dimmer**
-- MOES Mini Joli Intelligent **2 gang Dimmer**
-- MOES Mini Joli Intelligent **1 à 4 gang Switch**
-- MOES Mini Smart Curtain Switch Module
-- MOES Mini Smart Garage Door Module
-
-> ⚙️ Aucun accès cloud requis : tout fonctionne en **local**, directement via IP et clé locale Tuya.
-
----
-
-## 🛠️ Installation via HACS
-
-1. Ouvrez HACS → Intégrations → **“+ Explorer et télécharger des dépôts”**
-2. Ajoutez ce dépôt :  
-   ```
-   https://github.com/SoFarSoGood86/moes_mini_module
-   ```
-3. Installez l’intégration.
-4. Redémarrez Home Assistant.
-
----
-
-## ⚙️ Configuration
+## Configuration
 
 Vous pouvez configurer vos modules soit :
 - via **l’interface Home Assistant** (ajout d’intégration),
@@ -132,12 +64,15 @@ moes_mini_module:
       device_id: 0987654321abcdefabcd4321
       type: switch_2gang
 ```
+Ou :
+Manuel : copier `custom_components/moes_mini_module` dans `config/custom_components/` et redémarrer HA.
 
-> 💡 Chaque module doit avoir une adresse IP fixe et sa propre clé locale.
+> Chaque module doit avoir une adresse IP fixe et sa propre clé locale.
 
----
+## Exemple YAML
+Voir `example_config.yaml` fourni.
 
-## 🔑 Comment obtenir la “Local Key” Tuya
+## Comment obtenir la “Local Key” Tuya
 
 Les modules MOES (comme la plupart des appareils Tuya) nécessitent une **clé locale** pour permettre la communication locale chiffrée.
 
@@ -165,9 +100,6 @@ Exemple :
 ```yaml
 local_key: a1b2c3d4e5f6g7h8
 ```
-
----
-
 ## 🧪 Tests & CI
 
 Ce projet inclut :
@@ -181,16 +113,16 @@ Exécuter les tests localement :
 pytest
 ```
 
----
+## Mappings DP courants (à vérifier selon firmware)
+- Dimmer: `DP 1` = ON/OFF, `DP 2` = Brightness (0–100)
+- Switch multi-gang: `DP 1..4` = on/off pour chaque canal
+- Curtain/Garage: `DP 1` = open, `DP 2` = close, `DP 3` = stop, `DP 101` = position (0–100)
 
-## 🧰 Dépendances
+## Limitations
+- Les `dps` peuvent varier selon firmware. Si un appareil ne répond pas comme prévu, récupérez le `status()` via tinytuya et ouvrez une issue.
+- L'intégration nécessite la `local_key` pour le contrôle local.
 
-- [TinyTuya](https://github.com/jasonacox/tinytuya) `>=1.12.0`
-- Compatible Home Assistant `2025.1` et versions supérieures.
-
----
-
-## 📦 Structure du dépôt
+## Structure du dépôt
 
 ```
 custom_components/moes_mini_module/
@@ -206,32 +138,29 @@ custom_components/moes_mini_module/
 └── icon.png
 ```
 
----
-
-## 🧠 Auteur
-
-Développé par **SoFarSoGood86**  
-📦 [https://github.com/SoFarSoGood86/moes_mini_module](https://github.com/SoFarSoGood86/moes_mini_module)
-
----
-
-## 🗓️ Historique des versions
+## Historique des versions
 
 | Version | Date | Changements |
 |----------|------|--------------|
 | 1.1.0 | 2025-11-10 | Ajout complet des modules Dimmer, Switch, Curtain, Garage + gestion YAML + CI |
 | 1.0.0 | 2025-11-09 | Première version fonctionnelle |
 
----
+## Changelog (extrait)
+- v1.1.0 : Ajout détection DPS, options DP, tests, CI, icon, example_config.yaml
 
-## 🪪 Licence
-Distribué sous licence **MIT**.  
-Copyright © 2025 — SoFarSoGood86.
+## Aide / Issues
+Ouvrez une issue sur le dépôt GitHub : `https://github.com/SoFarSoGood86/moes_mini_module/issues`
 
----
+## Support
 
-## 🖼️ Icône du dépôt
+Si vous aimez cette intégration, vous pouvez m’offrir un café ☕️ :
 
-![MOES Logo](./icon.png)
+[![Buy Me A Coffee](https://github.com/user-attachments/assets/5b064037-c6d4-4d66-b53a-21e340178782 )](https://www.buymeacoffee.com/SoFarSoGood86)
+
+
+
+
+
+
 
 
