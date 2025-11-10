@@ -98,7 +98,7 @@ Exemple :
 ```yaml
 local_key: a1b2c3d4e5f6g7h8
 ```
-## 🧪 Tests & CI
+## Tests & CI
 
 Ce projet inclut :
 - **Pytest** pour les tests unitaires (`tests/`)
