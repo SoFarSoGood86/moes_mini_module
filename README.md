@@ -67,3 +67,171 @@ Si vous aimez cette intégration, vous pouvez m’offrir un café ☕️ :
 
 [![Buy Me A Coffee](https://github.com/user-attachments/assets/5b064037-c6d4-4d66-b53a-21e340178782 )](https://www.buymeacoffee.com/SoFarSoGood86)
 
+
+
+- - - - - - - - -
+
+
+# 💡 MOES Mini Module (local)
+
+![HACS Badge](https://img.shields.io/badge/HACS-Custom-orange.svg)
+![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2025.1+-blue.svg)
+![License](https://img.shields.io/github/license/SoFarSoGood86/moes_mini_module)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/SoFarSoGood86/moes_mini_module)
+![Build](https://github.com/SoFarSoGood86/moes_mini_module/actions/workflows/ci.yml/badge.svg)
+
+---
+
+## 🧩 Présentation
+
+**MOES Mini Module (local)** est une intégration Home Assistant permettant de **contrôler en local** (sans cloud Tuya) plusieurs modèles de modules MOES "Mini Joli Intelligent", via le protocole **TinyTuya**.
+
+### Modules compatibles :
+- MOES Mini Joli Intelligent **1 gang Dimmer**
+- MOES Mini Joli Intelligent **2 gang Dimmer**
+- MOES Mini Joli Intelligent **1 à 4 gang Switch**
+- MOES Mini Smart Curtain Switch Module
+- MOES Mini Smart Garage Door Module
+
+> ⚙️ Aucun accès cloud requis : tout fonctionne en **local**, directement via IP et clé locale Tuya.
+
+---
+
+## 🛠️ Installation via HACS
+
+1. Ouvrez HACS → Intégrations → **“+ Explorer et télécharger des dépôts”**
+2. Ajoutez ce dépôt :  
+   ```
+   https://github.com/SoFarSoGood86/moes_mini_module
+   ```
+3. Installez l’intégration.
+4. Redémarrez Home Assistant.
+
+---
+
+## ⚙️ Configuration
+
+Vous pouvez configurer vos modules soit :
+- via **l’interface Home Assistant** (ajout d’intégration),
+- soit manuellement en **YAML**.
+
+### Exemple de configuration YAML :
+
+```yaml
+moes_mini_module:
+  devices:
+    - name: "Variateur salon"
+      ip: 192.168.1.42
+      local_key: a1b2c3d4e5f6g7h8
+      device_id: 1234567890abcdef1234abcd
+      type: dimmer_1gang
+
+    - name: "Interrupteur cuisine"
+      ip: 192.168.1.43
+      local_key: z9y8x7w6v5u4t3s2
+      device_id: 0987654321abcdefabcd4321
+      type: switch_2gang
+```
+
+> 💡 Chaque module doit avoir une adresse IP fixe et sa propre clé locale.
+
+---
+
+## 🔑 Comment obtenir la “Local Key” Tuya
+
+Les modules MOES (comme la plupart des appareils Tuya) nécessitent une **clé locale** pour permettre la communication locale chiffrée.
+
+### Étape 1 – Créer un compte développeur Tuya
+1. Rendez-vous sur [https://iot.tuya.com](https://iot.tuya.com)
+2. Créez un compte gratuit.
+3. Créez un **Cloud Project** (type “Smart Home”).
+
+### Étape 2 – Lier votre compte Tuya Smart / Smart Life
+1. Dans votre projet, allez dans **“Link devices by App Account”**
+2. Cliquez sur **“Add App Account”**
+3. Scannez le QR code depuis l’application mobile Tuya Smart (ou Smart Life).
+4. Vos appareils seront automatiquement visibles dans la console.
+
+### Étape 3 – Récupérer la clé locale
+1. Sélectionnez votre module dans la liste.
+2. Cliquez sur **Device Information**
+3. Notez :
+   - `Device ID`
+   - `Local Key`
+   - `IP Address`
+
+### Étape 4 – Insérez la clé dans votre configuration Home Assistant
+Exemple :
+```yaml
+local_key: a1b2c3d4e5f6g7h8
+```
+
+---
+
+## 🧪 Tests & CI
+
+Ce projet inclut :
+- **Pytest** pour les tests unitaires (`tests/`)
+- **Linting** (`flake8`)
+- **Hassfest** pour la conformité Home Assistant
+- **GitHub Actions CI**
+
+Exécuter les tests localement :
+```bash
+pytest
+```
+
+---
+
+## 🧰 Dépendances
+
+- [TinyTuya](https://github.com/jasonacox/tinytuya) `>=1.12.0`
+- Compatible Home Assistant `2025.1` et versions supérieures.
+
+---
+
+## 📦 Structure du dépôt
+
+```
+custom_components/moes_mini_module/
+├── __init__.py
+├── manifest.json
+├── config_flow.py
+├── switch.py
+├── light.py
+├── cover.py
+├── services.yaml
+├── translations/
+│   └── fr.json
+└── icon.png
+```
+
+---
+
+## 🧠 Auteur
+
+Développé par **SoFarSoGood86**  
+📦 [https://github.com/SoFarSoGood86/moes_mini_module](https://github.com/SoFarSoGood86/moes_mini_module)
+
+---
+
+## 🗓️ Historique des versions
+
+| Version | Date | Changements |
+|----------|------|--------------|
+| 1.1.0 | 2025-11-10 | Ajout complet des modules Dimmer, Switch, Curtain, Garage + gestion YAML + CI |
+| 1.0.0 | 2025-11-09 | Première version fonctionnelle |
+
+---
+
+## 🪪 Licence
+Distribué sous licence **MIT**.  
+Copyright © 2025 — SoFarSoGood86.
+
+---
+
+## 🖼️ Icône du dépôt
+
+![MOES Logo](./icon.png)
+
+
