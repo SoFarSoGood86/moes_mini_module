@@ -5,16 +5,7 @@
 
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-blue.svg?logo=homeassistant)](https://hacs.xyz)
 [![GitHub Release](https://img.shields.io/github/v/release/SoFarSoGood86/moes_mini_module)](https://github.com/SoFarSoGood86/moes_mini_module/releases)
-[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-41BDF5)](https://www.home-assistant.io/)
-
-
-
-![HACS Badge](https://img.shields.io/badge/HACS-Custom-blue.svg?logo=homeassistant)](https://hacs.xyz)
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2025.1+-blue.svg)
-![License](https://img.shields.io/github/license/SoFarSoGood86/moes_mini_module)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/SoFarSoGood86/moes_mini_module)
-![Build](https://github.com/SoFarSoGood86/moes_mini_module/actions/workflows/ci.yml/badge.svg)
-
 
 ## Description
 Cette intégration Home Assistant permet le contrôle en local (TuyaLan Protocol) sans passer par le cloud.
