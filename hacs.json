@@ -11,4 +11,5 @@
   ],
   "homeassistant": "2024.5.0",
   "render_readme": true
+  "icon": "https://raw.githubusercontent.com/SoFarSoGood86/moes_mini_module/main/icon.png"
 }
