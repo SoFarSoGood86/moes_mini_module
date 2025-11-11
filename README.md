@@ -47,7 +47,7 @@ Vous pouvez configurer vos modules soit :
 - via **l’interface Home Assistant** (ajout d’intégration),
 - soit manuellement en **YAML**.
 
-### Exemple de configuration YAML :
+## Exemple de configuration YAML :
 
 ```yaml
 moes_mini_module:
@@ -77,6 +77,7 @@ Les modules MOES (comme la plupart des appareils Tuya) nécessitent une **clé l
 ### Scanner réseau :
 TinyTuya intègre un scanner réseau permettant de localiser les appareils Tuya sur votre réseau local. Il affiche l'adresse, l'identifiant et la version de chaque appareil. 
 Votre réseau local et votre pare-feu doivent autoriser le trafic UDP (ports 6666, 6667 et 7000) et TCP (port 6668).
+Ouvrez le terminal de Homme Assistant et entrez la commande suivante :
 
 ```bash
 python -m tinytuya scan
