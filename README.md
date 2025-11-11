@@ -74,6 +74,13 @@ Voir `example_config.yaml` fourni.
 
 Les modules MOES (comme la plupart des appareils Tuya) nécessitent une **clé locale** pour permettre la communication locale chiffrée.
 
+### Scanner réseau :
+TinyTuya intègre un scanner réseau permettant de localiser les appareils Tuya sur votre réseau local. Il affiche l'adresse, l'identifiant et la version de chaque appareil. 
+Votre réseau local et votre pare-feu doivent autoriser le trafic UDP (ports 6666, 6667 et 7000) et TCP (port 6668).
+
+```bash
+python -m tinytuya scan
+```
 ### Étape 1 – Créer un compte développeur Tuya
 1. Rendez-vous sur [https://iot.tuya.com](https://iot.tuya.com)
 2. Créez un compte gratuit.
